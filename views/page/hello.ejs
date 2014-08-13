@@ -1,0 +1,45 @@
+<% include ../public/head.ejs %>
+<link rel='stylesheet' href='/css/index.css' />
+<style>
+	.swipe {
+	  overflow: hidden;
+	  visibility: hidden;
+	  position: relative;
+	  height: 300px;
+	}
+	.swipe-wrap {
+	  overflow: hidden;
+	  position: relative;
+	}
+	.swipe-wrap > div {
+	  float:left;
+	  width:100%;
+	  position: relative;
+	}
+</style>
+</head>
+<body>
+  <!-- page start -->
+    <div id="container" class="pl10 pr10">
+    <div id='slider' class='swipe'>
+		  <div class='swipe-wrap'>
+		    <div>
+		    	<img data-src="/img/test.jpg" src="/img/place.jpg" class="w"/>	
+		    </div>
+		    <div>
+		    	<img data-src="/img/test2.jpg" src="/img/place.jpg" class="w" />
+		    </div>
+		    <div>
+		    	<img data-src="/img/place.jpg" src="/img/place.jpg" class="w" />
+		    </div>
+		  </div>
+		</div>
+
+    	
+    </div>
+  <!-- page end -->
+<!-- 公用脚本 开始 -->
+<% include ../public/lib.ejs %>
+<!-- 公用脚本 结束 -->
+<script src="/dist-js/page/index.js"></script>
+<% include ../public/foot.ejs %>

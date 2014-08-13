@@ -1,0 +1,1 @@
+define(["require","exports","module","zepto","fastclick"],function(e,t,n){var r=e("zepto"),i=e("fastclick");n.exports={printHello:function(e){document.write("hello "+e)},fastclick:function(){window.addEventListener("load",function(){i.attach(document.body)})}}});
